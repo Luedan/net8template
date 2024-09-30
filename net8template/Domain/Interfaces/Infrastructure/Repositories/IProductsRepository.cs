@@ -4,15 +4,15 @@ namespace net8template.Domain.Interfaces.Infrastructure.Repositories
 {
     public interface IProductsRepository
     {
-        Task<IEnumerable<Products>> GetAll();
+        Task<IEnumerable<Product>> GetAll();
 
-        Task<Products?> GetById(int id);
+        Task<Product?> GetById(int id);
 
-        Task Add(Products product);
+        Task Add(Product product);
 
-        void Update(Products product);
+        void Update(Product product);
 
-        void Delete(Products product);
+        void Delete(Product product);
 
         Task Save();
     }

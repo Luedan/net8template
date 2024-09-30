@@ -14,22 +14,22 @@ namespace net8template.Infrastructure.Persistence.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Products>> GetAll() =>
+        public async Task<IEnumerable<Product>> GetAll() =>
             await _context.Products.ToListAsync();
 
-        public async Task<Products?> GetById(int id) =>
+        public async Task<Product?> GetById(int id) =>
             await _context.Products.FindAsync(id);
 
-        public async Task Add(Products product) =>
+        public async Task Add(Product product) =>
             await _context.Products.AddAsync(product);
 
-        public void Update(Products product)
+        public void Update(Product product)
         {
             _context.Products.Attach(product);
             _context.Entry(product).State = EntityState.Modified;
         }
 
-        public void Delete(Products product)
+        public void Delete(Product product)
         {
             _context.Products.Remove(product);
         }

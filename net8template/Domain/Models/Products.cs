@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace net8template.Domain.Models
 {
-    public class Products
+    public class Product
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductId { get; set; }

@@ -7,6 +7,6 @@ namespace net8template.Infrastructure.Persistence
     {
         public ContextApp(DbContextOptions<ContextApp> contextOptions): base(contextOptions) { }
 
-        public DbSet<Products> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

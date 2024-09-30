@@ -8,9 +8,9 @@ namespace net8template.Application.Profiles
     {
         public ProductsProfile()
         {
-            CreateMap<Products, ProductResponseDto>();
-            CreateMap<ProductInsertDto, Products>();
-            CreateMap<ProductUpdateDto, Products>();
+            CreateMap<Product, ProductResponseDto>();
+            CreateMap<ProductInsertDto, Product>();
+            CreateMap<ProductUpdateDto, Product>();
         }
 
     }
